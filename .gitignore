@@ -1,0 +1,45 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments ---
+.venv/
+.venv*/
+venv/
+env/
+
+# --- Secrets / credentials (never commit) ---
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+
+# --- Model weights (never commit binaries) ---
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.ckpt
+
+# --- Data / databases / logs ---
+data/
+archive/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.log
+
+# --- Tooling / IDE / OS ---
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

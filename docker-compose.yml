@@ -1,0 +1,21 @@
+services:
+  memory:
+    build: .
+    image: aml-memory-system:latest
+    container_name: aml-memory
+    ports:
+      - "8000:8000"
+    environment:
+      EMBEDDING_MODEL: BAAI/bge-small-en-v1.5
+      DB_PATH: /data/memory.db
+      # Optional gpt-4o-mini enrichment (academic-board compliant when enabled).
+      # LLM_EXTRACT: "0"
+      # LLM_BASE_URL: "https://api.openai.com/v1"
+      # LLM_API_KEY: ""
+      # LLM_MODEL: "gpt-4o-mini"
+    volumes:
+      - memory_data:/data
+    restart: unless-stopped
+
+volumes:
+  memory_data:

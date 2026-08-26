@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-08-24T14:50:06.787042+00:00",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "real_embedding_active": true,
+  "checks": [
+    {
+      "name": "real_embedding_active",
+      "passed": true,
+      "detail": "fastembed model=BAAI/bge-small-en-v1.5 dim=384"
+    },
+    {
+      "name": "health_200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "add_200_and_echo",
+      "passed": true,
+      "detail": "status=200 body={\"request_id\":\"req-1\"}"
+    },
+    {
+      "name": "immediate_search_hit",
+      "passed": true,
+      "detail": "n=1"
+    },
+    {
+      "name": "user_id_isolation",
+      "passed": true,
+      "detail": "alice sees 1 memories, none from bob"
+    },
+    {
+      "name": "epistemic_safety_empty",
+      "passed": true,
+      "detail": "body={\"data\":[]}"
+    },
+    {
+      "name": "response_shape_iso8601",
+      "passed": true,
+      "detail": "keys_ok=True iso_ok=True"
+    },
+    {
+      "name": "synonym_retrieval",
+      "passed": true,
+      "detail": "hit=True top_score=0.663835"
+    }
+  ],
+  "latency": {
+    "add": {
+      "avg_ms": 72.92,
+      "p95_ms": 96.5,
+      "max_ms": 109.01
+    },
+    "search": {
+      "avg_ms": 61.54,
+      "p95_ms": 66.53,
+      "max_ms": 89.57
+    }
+  },
+  "all_passed": true
+}

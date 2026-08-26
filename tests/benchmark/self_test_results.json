@@ -1,0 +1,1444 @@
+{
+  "summary": {
+    "generated_at": "2026-08-26T06:54:01.942680+00:00",
+    "disclaimer": "内部自测集，非官方基准数据集，结果仅作内部优化参考",
+    "dimensions": {
+      "A": {
+        "score": 100.0,
+        "passed": 7,
+        "total": 7
+      },
+      "B": {
+        "score": 100.0,
+        "passed": 5,
+        "total": 5
+      },
+      "C": {
+        "score": 100.0,
+        "passed": 6,
+        "total": 6
+      },
+      "D": {
+        "score": 100.0,
+        "passed": 5,
+        "total": 5
+      },
+      "E": {
+        "score": 100.0,
+        "passed": 8,
+        "total": 8
+      },
+      "G": {
+        "score": 100.0,
+        "passed": 6,
+        "total": 6
+      },
+      "H": {
+        "score": 100.0,
+        "passed": 5,
+        "total": 5
+      }
+    },
+    "overall": {
+      "score": 100.0,
+      "passed": 42,
+      "total": 42
+    },
+    "performance": {
+      "add_avg_ms": 78.82,
+      "add_p95_ms": 120.54,
+      "search_avg_ms": 75.34,
+      "search_p95_ms": 83.21,
+      "write_verify_hit": "32/32"
+    }
+  },
+  "write_records": [
+    {
+      "user_id": "u_a",
+      "session_id": "s_a1",
+      "ok": true,
+      "status": 200,
+      "ms": 181.03
+    },
+    {
+      "user_id": "u_b",
+      "session_id": "s_b1",
+      "ok": true,
+      "status": 200,
+      "ms": 73.28
+    },
+    {
+      "user_id": "u_b",
+      "session_id": "s_b2",
+      "ok": true,
+      "status": 200,
+      "ms": 71.53
+    },
+    {
+      "user_id": "u_b",
+      "session_id": "s_b3",
+      "ok": true,
+      "status": 200,
+      "ms": 72.82
+    },
+    {
+      "user_id": "u_b",
+      "session_id": "s_b4",
+      "ok": true,
+      "status": 200,
+      "ms": 67.62
+    },
+    {
+      "user_id": "u_b",
+      "session_id": "s_b5",
+      "ok": true,
+      "status": 200,
+      "ms": 73.94
+    },
+    {
+      "user_id": "u_c",
+      "session_id": "s_c1",
+      "ok": true,
+      "status": 200,
+      "ms": 90.31
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d1",
+      "ok": true,
+      "status": 200,
+      "ms": 127.63
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d2",
+      "ok": true,
+      "status": 200,
+      "ms": 116.02
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d3",
+      "ok": true,
+      "status": 200,
+      "ms": 68.22
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d4",
+      "ok": true,
+      "status": 200,
+      "ms": 69.79
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d5",
+      "ok": true,
+      "status": 200,
+      "ms": 120.54
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d6",
+      "ok": true,
+      "status": 200,
+      "ms": 71.53
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d7",
+      "ok": true,
+      "status": 200,
+      "ms": 120.25
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d8",
+      "ok": true,
+      "status": 200,
+      "ms": 110.89
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d9",
+      "ok": true,
+      "status": 200,
+      "ms": 116.98
+    },
+    {
+      "user_id": "u_d",
+      "session_id": "s_d10",
+      "ok": true,
+      "status": 200,
+      "ms": 70.06
+    },
+    {
+      "user_id": "u_e",
+      "session_id": "s_e1",
+      "ok": true,
+      "status": 200,
+      "ms": 69.53
+    },
+    {
+      "user_id": "u_e",
+      "session_id": "s_e2",
+      "ok": true,
+      "status": 200,
+      "ms": 67.57
+    },
+    {
+      "user_id": "u_e",
+      "session_id": "s_e3",
+      "ok": true,
+      "status": 200,
+      "ms": 71.07
+    },
+    {
+      "user_id": "u_e",
+      "session_id": "s_e4",
+      "ok": true,
+      "status": 200,
+      "ms": 72.86
+    },
+    {
+      "user_id": "u_e",
+      "session_id": "s_e5",
+      "ok": true,
+      "status": 200,
+      "ms": 73.4
+    },
+    {
+      "user_id": "u_e",
+      "session_id": "s_e6",
+      "ok": true,
+      "status": 200,
+      "ms": 29.79
+    },
+    {
+      "user_id": "u_e",
+      "session_id": "s_e7",
+      "ok": true,
+      "status": 200,
+      "ms": 31.39
+    },
+    {
+      "user_id": "u_g",
+      "session_id": "s_g1",
+      "ok": true,
+      "status": 200,
+      "ms": 29.01
+    },
+    {
+      "user_id": "u_g",
+      "session_id": "s_g2",
+      "ok": true,
+      "status": 200,
+      "ms": 75.03
+    },
+    {
+      "user_id": "u_g",
+      "session_id": "s_g3",
+      "ok": true,
+      "status": 200,
+      "ms": 72.98
+    },
+    {
+      "user_id": "u_g",
+      "session_id": "s_g4",
+      "ok": true,
+      "status": 200,
+      "ms": 73.48
+    },
+    {
+      "user_id": "u_g",
+      "session_id": "s_g5",
+      "ok": true,
+      "status": 200,
+      "ms": 77.47
+    },
+    {
+      "user_id": "u_g",
+      "session_id": "s_g6",
+      "ok": true,
+      "status": 200,
+      "ms": 36.21
+    },
+    {
+      "user_id": "u_h",
+      "session_id": "s_h1",
+      "ok": true,
+      "status": 200,
+      "ms": 37.61
+    },
+    {
+      "user_id": "u_h2",
+      "session_id": "s_h2_1",
+      "ok": true,
+      "status": 200,
+      "ms": 82.37
+    }
+  ],
+  "questions": [
+    {
+      "id": "A-01",
+      "dimension": "A",
+      "difficulty": "simple",
+      "query": "What is my profession?",
+      "user_id": "u_a",
+      "passed": true,
+      "n_returned": 2,
+      "rank": 2,
+      "top1_score": 0.7192,
+      "ms": 83.92,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "software engineer"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:17:20.000000Z] user: My employee ID number is 4821.\n[2023-11-14T22:18:20.000000Z] user: I have a cat named Luna.\n[2023-11-14T22:19:20.000000Z] user: I have a dog named Max.\n[2023-11-14T22:20:20.000000Z] user: I have been meaning to reorganize the garage and fix the garden shed this weekend, paint the fence a new color, call the plumber about the dripping faucet, and plan a short trip to visit my cousins next month. By the way, my grandmother's maiden name was Kowalczyk, a Polish surname from my family's side.",
+        "[2023-11-14T22:13:20.000000Z] user: I am a software engineer.\n[2023-11-14T22:14:20.000000Z] user: I live in Boston, Massachusetts.\n[2023-11-14T22:15:20.000000Z] user: My wedding anniversary is on March 15th.\n[2023-11-14T22:16:20.000000Z] user: I drive a blue Toyota Corolla."
+      ]
+    },
+    {
+      "id": "A-02",
+      "dimension": "A",
+      "difficulty": "simple",
+      "query": "Where do I live?",
+      "user_id": "u_a",
+      "passed": true,
+      "n_returned": 2,
+      "rank": 1,
+      "top1_score": 0.6977,
+      "ms": 31.58,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Boston"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:13:20.000000Z] user: I am a software engineer.\n[2023-11-14T22:14:20.000000Z] user: I live in Boston, Massachusetts.\n[2023-11-14T22:15:20.000000Z] user: My wedding anniversary is on March 15th.\n[2023-11-14T22:16:20.000000Z] user: I drive a blue Toyota Corolla.",
+        "[2023-11-14T22:17:20.000000Z] user: My employee ID number is 4821.\n[2023-11-14T22:18:20.000000Z] user: I have a cat named Luna.\n[2023-11-14T22:19:20.000000Z] user: I have a dog named Max.\n[2023-11-14T22:20:20.000000Z] user: I have been meaning to reorganize the garage and fix the garden shed this weekend, paint the fence a new color, call the plumber about the dripping faucet, and plan a short trip to visit my cousins next month. By the way, my grandmother's maiden name was Kowalczyk, a Polish surname from my family's side."
+      ]
+    },
+    {
+      "id": "A-03",
+      "dimension": "A",
+      "difficulty": "medium",
+      "query": "When is my wedding anniversary?",
+      "user_id": "u_a",
+      "passed": true,
+      "n_returned": 2,
+      "rank": 1,
+      "top1_score": 0.7937,
+      "ms": 74.36,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "March 15"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:13:20.000000Z] user: I am a software engineer.\n[2023-11-14T22:14:20.000000Z] user: I live in Boston, Massachusetts.\n[2023-11-14T22:15:20.000000Z] user: My wedding anniversary is on March 15th.\n[2023-11-14T22:16:20.000000Z] user: I drive a blue Toyota Corolla.",
+        "[2023-11-14T22:17:20.000000Z] user: My employee ID number is 4821.\n[2023-11-14T22:18:20.000000Z] user: I have a cat named Luna.\n[2023-11-14T22:19:20.000000Z] user: I have a dog named Max.\n[2023-11-14T22:20:20.000000Z] user: I have been meaning to reorganize the garage and fix the garden shed this weekend, paint the fence a new color, call the plumber about the dripping faucet, and plan a short trip to visit my cousins next month. By the way, my grandmother's maiden name was Kowalczyk, a Polish surname from my family's side."
+      ]
+    },
+    {
+      "id": "A-04",
+      "dimension": "A",
+      "difficulty": "medium",
+      "query": "What car do I drive?",
+      "user_id": "u_a",
+      "passed": true,
+      "n_returned": 2,
+      "rank": 1,
+      "top1_score": 0.7126,
+      "ms": 78.43,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Corolla"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:13:20.000000Z] user: I am a software engineer.\n[2023-11-14T22:14:20.000000Z] user: I live in Boston, Massachusetts.\n[2023-11-14T22:15:20.000000Z] user: My wedding anniversary is on March 15th.\n[2023-11-14T22:16:20.000000Z] user: I drive a blue Toyota Corolla.",
+        "[2023-11-14T22:17:20.000000Z] user: My employee ID number is 4821.\n[2023-11-14T22:18:20.000000Z] user: I have a cat named Luna.\n[2023-11-14T22:19:20.000000Z] user: I have a dog named Max.\n[2023-11-14T22:20:20.000000Z] user: I have been meaning to reorganize the garage and fix the garden shed this weekend, paint the fence a new color, call the plumber about the dripping faucet, and plan a short trip to visit my cousins next month. By the way, my grandmother's maiden name was Kowalczyk, a Polish surname from my family's side."
+      ]
+    },
+    {
+      "id": "A-05",
+      "dimension": "A",
+      "difficulty": "boundary",
+      "query": "What is my employee ID number?",
+      "user_id": "u_a",
+      "passed": true,
+      "n_returned": 2,
+      "rank": 1,
+      "top1_score": 0.8236,
+      "ms": 80.32,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "4821"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:17:20.000000Z] user: My employee ID number is 4821.\n[2023-11-14T22:18:20.000000Z] user: I have a cat named Luna.\n[2023-11-14T22:19:20.000000Z] user: I have a dog named Max.\n[2023-11-14T22:20:20.000000Z] user: I have been meaning to reorganize the garage and fix the garden shed this weekend, paint the fence a new color, call the plumber about the dripping faucet, and plan a short trip to visit my cousins next month. By the way, my grandmother's maiden name was Kowalczyk, a Polish surname from my family's side.",
+        "[2023-11-14T22:13:20.000000Z] user: I am a software engineer.\n[2023-11-14T22:14:20.000000Z] user: I live in Boston, Massachusetts.\n[2023-11-14T22:15:20.000000Z] user: My wedding anniversary is on March 15th.\n[2023-11-14T22:16:20.000000Z] user: I drive a blue Toyota Corolla."
+      ]
+    },
+    {
+      "id": "A-06",
+      "dimension": "A",
+      "difficulty": "boundary",
+      "query": "What is my cat's name?",
+      "user_id": "u_a",
+      "passed": true,
+      "n_returned": 2,
+      "rank": 1,
+      "top1_score": 0.7993,
+      "ms": 82.09,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Luna"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:17:20.000000Z] user: My employee ID number is 4821.\n[2023-11-14T22:18:20.000000Z] user: I have a cat named Luna.\n[2023-11-14T22:19:20.000000Z] user: I have a dog named Max.\n[2023-11-14T22:20:20.000000Z] user: I have been meaning to reorganize the garage and fix the garden shed this weekend, paint the fence a new color, call the plumber about the dripping faucet, and plan a short trip to visit my cousins next month. By the way, my grandmother's maiden name was Kowalczyk, a Polish surname from my family's side.",
+        "[2023-11-14T22:13:20.000000Z] user: I am a software engineer.\n[2023-11-14T22:14:20.000000Z] user: I live in Boston, Massachusetts.\n[2023-11-14T22:15:20.000000Z] user: My wedding anniversary is on March 15th.\n[2023-11-14T22:16:20.000000Z] user: I drive a blue Toyota Corolla."
+      ]
+    },
+    {
+      "id": "A-07",
+      "dimension": "A",
+      "difficulty": "boundary",
+      "query": "What was my grandmother's maiden name?",
+      "user_id": "u_a",
+      "passed": true,
+      "n_returned": 2,
+      "rank": 1,
+      "top1_score": 0.7688,
+      "ms": 80.74,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Kowalczyk"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:17:20.000000Z] user: My employee ID number is 4821.\n[2023-11-14T22:18:20.000000Z] user: I have a cat named Luna.\n[2023-11-14T22:19:20.000000Z] user: I have a dog named Max.\n[2023-11-14T22:20:20.000000Z] user: I have been meaning to reorganize the garage and fix the garden shed this weekend, paint the fence a new color, call the plumber about the dripping faucet, and plan a short trip to visit my cousins next month. By the way, my grandmother's maiden name was Kowalczyk, a Polish surname from my family's side.",
+        "[2023-11-14T22:13:20.000000Z] user: I am a software engineer.\n[2023-11-14T22:14:20.000000Z] user: I live in Boston, Massachusetts.\n[2023-11-14T22:15:20.000000Z] user: My wedding anniversary is on March 15th.\n[2023-11-14T22:16:20.000000Z] user: I drive a blue Toyota Corolla."
+      ]
+    },
+    {
+      "id": "B-01",
+      "dimension": "B",
+      "difficulty": "simple",
+      "query": "Who is my teammate at work?",
+      "user_id": "u_b",
+      "passed": true,
+      "n_returned": 5,
+      "rank": 1,
+      "top1_score": 0.7413,
+      "ms": 77.45,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "teammate"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:30:00.000000Z] user: My teammate at work is David.",
+        "[2023-11-14T22:33:00.000000Z] user: David is my best friend.",
+        "[2023-11-14T22:32:00.000000Z] user: Sarah works as a pediatrician at City Hospital.",
+        "[2023-11-14T22:31:00.000000Z] user: David's wife is named Sarah.",
+        "[2023-11-14T22:34:00.000000Z] user: David has a daughter named Emma."
+      ]
+    },
+    {
+      "id": "B-02",
+      "dimension": "B",
+      "difficulty": "medium",
+      "query": "What does David's wife do for a living?",
+      "user_id": "u_b",
+      "passed": true,
+      "n_returned": 5,
+      "rank": 1,
+      "top1_score": 0.6925,
+      "ms": 81.47,
+      "checks": [
+        {
+          "type": "contains_all",
+          "values": [
+            "wife",
+            "pediatrician"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:31:00.000000Z] user: David's wife is named Sarah.",
+        "[2023-11-14T22:34:00.000000Z] user: David has a daughter named Emma.",
+        "[2023-11-14T22:33:00.000000Z] user: David is my best friend.",
+        "[2023-11-14T22:30:00.000000Z] user: My teammate at work is David.",
+        "[2023-11-14T22:32:00.000000Z] user: Sarah works as a pediatrician at City Hospital."
+      ]
+    },
+    {
+      "id": "B-03",
+      "dimension": "B",
+      "difficulty": "hard",
+      "query": "Where does my best friend's wife work?",
+      "user_id": "u_b",
+      "passed": true,
+      "n_returned": 5,
+      "rank": 2,
+      "top1_score": 0.6109,
+      "ms": 79.58,
+      "checks": [
+        {
+          "type": "contains_all",
+          "values": [
+            "best friend",
+            "wife",
+            "City Hospital"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:30:00.000000Z] user: My teammate at work is David.",
+        "[2023-11-14T22:33:00.000000Z] user: David is my best friend.",
+        "[2023-11-14T22:31:00.000000Z] user: David's wife is named Sarah.",
+        "[2023-11-14T22:34:00.000000Z] user: David has a daughter named Emma.",
+        "[2023-11-14T22:32:00.000000Z] user: Sarah works as a pediatrician at City Hospital."
+      ]
+    },
+    {
+      "id": "B-04",
+      "dimension": "B",
+      "difficulty": "medium",
+      "query": "Does my teammate have any children?",
+      "user_id": "u_b",
+      "passed": true,
+      "n_returned": 5,
+      "rank": 1,
+      "top1_score": 0.6276,
+      "ms": 80.06,
+      "checks": [
+        {
+          "type": "contains_all",
+          "values": [
+            "teammate",
+            "Emma"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:30:00.000000Z] user: My teammate at work is David.",
+        "[2023-11-14T22:33:00.000000Z] user: David is my best friend.",
+        "[2023-11-14T22:34:00.000000Z] user: David has a daughter named Emma.",
+        "[2023-11-14T22:32:00.000000Z] user: Sarah works as a pediatrician at City Hospital.",
+        "[2023-11-14T22:31:00.000000Z] user: David's wife is named Sarah."
+      ]
+    },
+    {
+      "id": "B-05",
+      "dimension": "B",
+      "difficulty": "hard",
+      "query": "What is the profession of my best friend's wife?",
+      "user_id": "u_b",
+      "passed": true,
+      "n_returned": 5,
+      "rank": 1,
+      "top1_score": 0.6062,
+      "ms": 85.98,
+      "checks": [
+        {
+          "type": "contains_all",
+          "values": [
+            "best friend",
+            "wife",
+            "pediatrician"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:33:00.000000Z] user: David is my best friend.",
+        "[2023-11-14T22:30:00.000000Z] user: My teammate at work is David.",
+        "[2023-11-14T22:31:00.000000Z] user: David's wife is named Sarah.",
+        "[2023-11-14T22:34:00.000000Z] user: David has a daughter named Emma.",
+        "[2023-11-14T22:32:00.000000Z] user: Sarah works as a pediatrician at City Hospital."
+      ]
+    },
+    {
+      "id": "C-01",
+      "dimension": "C",
+      "difficulty": "simple",
+      "query": "What project did I work on Monday?",
+      "user_id": "u_c",
+      "passed": true,
+      "n_returned": 1,
+      "rank": 1,
+      "top1_score": 0.7259,
+      "ms": 34.57,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Alpha"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:46:40.000000Z] user: On Monday I worked on the Alpha project.\n[2023-11-14T22:47:40.000000Z] user: On Tuesday I worked on the Beta project.\n[2023-11-14T22:48:40.000000Z] user: On Wednesday I started the Gamma project."
+      ]
+    },
+    {
+      "id": "C-02",
+      "dimension": "C",
+      "difficulty": "simple",
+      "query": "What project did I work on Tuesday?",
+      "user_id": "u_c",
+      "passed": true,
+      "n_returned": 1,
+      "rank": 1,
+      "top1_score": 0.7211,
+      "ms": 80.0,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Beta"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:46:40.000000Z] user: On Monday I worked on the Alpha project.\n[2023-11-14T22:47:40.000000Z] user: On Tuesday I worked on the Beta project.\n[2023-11-14T22:48:40.000000Z] user: On Wednesday I started the Gamma project."
+      ]
+    },
+    {
+      "id": "C-03",
+      "dimension": "C",
+      "difficulty": "medium",
+      "query": "Which project am I working on now?",
+      "user_id": "u_c",
+      "passed": true,
+      "n_returned": 1,
+      "rank": 1,
+      "top1_score": 0.7167,
+      "ms": 80.76,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Gamma"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:46:40.000000Z] user: On Monday I worked on the Alpha project.\n[2023-11-14T22:47:40.000000Z] user: On Tuesday I worked on the Beta project.\n[2023-11-14T22:48:40.000000Z] user: On Wednesday I started the Gamma project."
+      ]
+    },
+    {
+      "id": "C-04",
+      "dimension": "C",
+      "difficulty": "medium",
+      "query": "What did I work on after the Alpha project?",
+      "user_id": "u_c",
+      "passed": true,
+      "n_returned": 1,
+      "rank": 1,
+      "top1_score": 0.7357,
+      "ms": 82.37,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Beta"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:46:40.000000Z] user: On Monday I worked on the Alpha project.\n[2023-11-14T22:47:40.000000Z] user: On Tuesday I worked on the Beta project.\n[2023-11-14T22:48:40.000000Z] user: On Wednesday I started the Gamma project."
+      ]
+    },
+    {
+      "id": "C-05",
+      "dimension": "C",
+      "difficulty": "medium",
+      "query": "What projects did I work on this week?",
+      "user_id": "u_c",
+      "passed": true,
+      "n_returned": 1,
+      "rank": 1,
+      "top1_score": 0.7403,
+      "ms": 80.35,
+      "checks": [
+        {
+          "type": "contains_all",
+          "values": [
+            "Alpha",
+            "Beta",
+            "Gamma"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:46:40.000000Z] user: On Monday I worked on the Alpha project.\n[2023-11-14T22:47:40.000000Z] user: On Tuesday I worked on the Beta project.\n[2023-11-14T22:48:40.000000Z] user: On Wednesday I started the Gamma project."
+      ]
+    },
+    {
+      "id": "C-06",
+      "dimension": "C",
+      "difficulty": "boundary",
+      "query": "What did I work on during the first two days of the week?",
+      "user_id": "u_c",
+      "passed": true,
+      "n_returned": 1,
+      "rank": 1,
+      "top1_score": 0.7087,
+      "ms": 84.83,
+      "checks": [
+        {
+          "type": "contains_all",
+          "values": [
+            "Alpha",
+            "Beta"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T22:46:40.000000Z] user: On Monday I worked on the Alpha project.\n[2023-11-14T22:47:40.000000Z] user: On Tuesday I worked on the Beta project.\n[2023-11-14T22:48:40.000000Z] user: On Wednesday I started the Gamma project."
+      ]
+    },
+    {
+      "id": "D-01",
+      "dimension": "D",
+      "difficulty": "medium",
+      "query": "Where do I live?",
+      "user_id": "u_d",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 1,
+      "top1_score": 0.6814,
+      "ms": 33.94,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Seattle"
+          ],
+          "passed": true
+        },
+        {
+          "type": "not_contains",
+          "values": [
+            "Boston"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:09:20.000000Z] user: I live in Seattle.",
+        "[2023-11-14T23:10:20.000000Z] user: I work at Globex.",
+        "[2023-11-14T23:06:20.000000Z] user: I like tea.",
+        "[2023-11-14T23:05:20.000000Z] user: I like coffee.",
+        "[2023-11-14T23:11:20.000000Z] user: I'm called Carol.",
+        "[2023-11-14T23:08:20.000000Z] user: I have a cat named Luna."
+      ]
+    },
+    {
+      "id": "D-02",
+      "dimension": "D",
+      "difficulty": "medium",
+      "query": "Where do I work?",
+      "user_id": "u_d",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 2,
+      "top1_score": 0.6636,
+      "ms": 74.37,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Globex"
+          ],
+          "passed": true
+        },
+        {
+          "type": "not_contains",
+          "values": [
+            "Acme"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:09:20.000000Z] user: I live in Seattle.",
+        "[2023-11-14T23:10:20.000000Z] user: I work at Globex.",
+        "[2023-11-14T23:06:20.000000Z] user: I like tea.",
+        "[2023-11-14T23:05:20.000000Z] user: I like coffee.",
+        "[2023-11-14T23:11:20.000000Z] user: I'm called Carol.",
+        "[2023-11-14T23:08:20.000000Z] user: I have a cat named Luna."
+      ]
+    },
+    {
+      "id": "D-03",
+      "dimension": "D",
+      "difficulty": "medium",
+      "query": "What is my name?",
+      "user_id": "u_d",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 1,
+      "top1_score": 0.6399,
+      "ms": 81.03,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Carol"
+          ],
+          "passed": true
+        },
+        {
+          "type": "not_contains",
+          "values": [
+            "Alice"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:11:20.000000Z] user: I'm called Carol.",
+        "[2023-11-14T23:05:20.000000Z] user: I like coffee.",
+        "[2023-11-14T23:06:20.000000Z] user: I like tea.",
+        "[2023-11-14T23:09:20.000000Z] user: I live in Seattle.",
+        "[2023-11-14T23:08:20.000000Z] user: I have a cat named Luna.",
+        "[2023-11-14T23:10:20.000000Z] user: I work at Globex."
+      ]
+    },
+    {
+      "id": "D-04",
+      "dimension": "D",
+      "difficulty": "medium",
+      "query": "What do I like?",
+      "user_id": "u_d",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 1,
+      "top1_score": 0.6927,
+      "ms": 78.84,
+      "checks": [
+        {
+          "type": "contains_all",
+          "values": [
+            "coffee",
+            "tea"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:06:20.000000Z] user: I like tea.",
+        "[2023-11-14T23:05:20.000000Z] user: I like coffee.",
+        "[2023-11-14T23:09:20.000000Z] user: I live in Seattle.",
+        "[2023-11-14T23:10:20.000000Z] user: I work at Globex.",
+        "[2023-11-14T23:11:20.000000Z] user: I'm called Carol.",
+        "[2023-11-14T23:08:20.000000Z] user: I have a cat named Luna."
+      ]
+    },
+    {
+      "id": "D-05",
+      "dimension": "D",
+      "difficulty": "boundary",
+      "query": "Do I have a cat?",
+      "user_id": "u_d",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 2,
+      "top1_score": 0.6162,
+      "ms": 79.66,
+      "checks": [
+        {
+          "type": "count_eq",
+          "values": [],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:05:20.000000Z] user: I like coffee.",
+        "[2023-11-14T23:08:20.000000Z] user: I have a cat named Luna.",
+        "[2023-11-14T23:06:20.000000Z] user: I like tea.",
+        "[2023-11-14T23:11:20.000000Z] user: I'm called Carol.",
+        "[2023-11-14T23:09:20.000000Z] user: I live in Seattle.",
+        "[2023-11-14T23:10:20.000000Z] user: I work at Globex."
+      ]
+    },
+    {
+      "id": "E-01",
+      "dimension": "E",
+      "difficulty": "simple",
+      "query": "Are there any foods I avoid?",
+      "user_id": "u_e",
+      "passed": true,
+      "n_returned": 7,
+      "rank": 3,
+      "top1_score": 0.6289,
+      "ms": 77.95,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "vegetarian"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:22:00.000000Z] user: I am allergic to peanuts.",
+        "[2023-11-14T23:23:00.000000Z] user: I don't like horror movies.",
+        "[2023-11-14T23:20:00.000000Z] user: I am a vegetarian.",
+        "[2023-11-14T23:25:00.000000Z] user: My favorite color is teal.",
+        "[2023-11-14T23:21:00.000000Z] user: I love hiking on weekends.",
+        "[2023-11-14T23:24:00.000000Z] user: I have been running every morning for five years.",
+        "[2023-11-14T23:26:00.000000Z] user: I grew up in a small town in Oregon."
+      ]
+    },
+    {
+      "id": "E-02",
+      "dimension": "E",
+      "difficulty": "simple",
+      "query": "What do I enjoy doing on weekends?",
+      "user_id": "u_e",
+      "passed": true,
+      "n_returned": 7,
+      "rank": 1,
+      "top1_score": 0.7497,
+      "ms": 77.75,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "hiking"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:21:00.000000Z] user: I love hiking on weekends.",
+        "[2023-11-14T23:25:00.000000Z] user: My favorite color is teal.",
+        "[2023-11-14T23:23:00.000000Z] user: I don't like horror movies.",
+        "[2023-11-14T23:20:00.000000Z] user: I am a vegetarian.",
+        "[2023-11-14T23:26:00.000000Z] user: I grew up in a small town in Oregon.",
+        "[2023-11-14T23:22:00.000000Z] user: I am allergic to peanuts.",
+        "[2023-11-14T23:24:00.000000Z] user: I have been running every morning for five years."
+      ]
+    },
+    {
+      "id": "E-03",
+      "dimension": "E",
+      "difficulty": "simple",
+      "query": "Do I have any allergies?",
+      "user_id": "u_e",
+      "passed": true,
+      "n_returned": 7,
+      "rank": 1,
+      "top1_score": 0.6742,
+      "ms": 74.72,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "peanuts"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:22:00.000000Z] user: I am allergic to peanuts.",
+        "[2023-11-14T23:25:00.000000Z] user: My favorite color is teal.",
+        "[2023-11-14T23:20:00.000000Z] user: I am a vegetarian.",
+        "[2023-11-14T23:23:00.000000Z] user: I don't like horror movies.",
+        "[2023-11-14T23:21:00.000000Z] user: I love hiking on weekends.",
+        "[2023-11-14T23:26:00.000000Z] user: I grew up in a small town in Oregon.",
+        "[2023-11-14T23:24:00.000000Z] user: I have been running every morning for five years."
+      ]
+    },
+    {
+      "id": "E-04",
+      "dimension": "E",
+      "difficulty": "medium",
+      "query": "What kind of movies do I dislike?",
+      "user_id": "u_e",
+      "passed": true,
+      "n_returned": 7,
+      "rank": 1,
+      "top1_score": 0.7334,
+      "ms": 82.24,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "horror"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:23:00.000000Z] user: I don't like horror movies.",
+        "[2023-11-14T23:25:00.000000Z] user: My favorite color is teal.",
+        "[2023-11-14T23:21:00.000000Z] user: I love hiking on weekends.",
+        "[2023-11-14T23:22:00.000000Z] user: I am allergic to peanuts.",
+        "[2023-11-14T23:20:00.000000Z] user: I am a vegetarian.",
+        "[2023-11-14T23:26:00.000000Z] user: I grew up in a small town in Oregon.",
+        "[2023-11-14T23:24:00.000000Z] user: I have been running every morning for five years."
+      ]
+    },
+    {
+      "id": "E-05",
+      "dimension": "E",
+      "difficulty": "medium",
+      "query": "What is my daily exercise habit?",
+      "user_id": "u_e",
+      "passed": true,
+      "n_returned": 7,
+      "rank": 3,
+      "top1_score": 0.6296,
+      "ms": 83.13,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "running"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:21:00.000000Z] user: I love hiking on weekends.",
+        "[2023-11-14T23:25:00.000000Z] user: My favorite color is teal.",
+        "[2023-11-14T23:24:00.000000Z] user: I have been running every morning for five years.",
+        "[2023-11-14T23:20:00.000000Z] user: I am a vegetarian.",
+        "[2023-11-14T23:22:00.000000Z] user: I am allergic to peanuts.",
+        "[2023-11-14T23:23:00.000000Z] user: I don't like horror movies.",
+        "[2023-11-14T23:26:00.000000Z] user: I grew up in a small town in Oregon."
+      ]
+    },
+    {
+      "id": "E-06",
+      "dimension": "E",
+      "difficulty": "medium",
+      "query": "What is my favorite color?",
+      "user_id": "u_e",
+      "passed": true,
+      "n_returned": 7,
+      "rank": 1,
+      "top1_score": 0.7906,
+      "ms": 78.81,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "teal"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:25:00.000000Z] user: My favorite color is teal.",
+        "[2023-11-14T23:21:00.000000Z] user: I love hiking on weekends.",
+        "[2023-11-14T23:20:00.000000Z] user: I am a vegetarian.",
+        "[2023-11-14T23:22:00.000000Z] user: I am allergic to peanuts.",
+        "[2023-11-14T23:23:00.000000Z] user: I don't like horror movies.",
+        "[2023-11-14T23:26:00.000000Z] user: I grew up in a small town in Oregon.",
+        "[2023-11-14T23:24:00.000000Z] user: I have been running every morning for five years."
+      ]
+    },
+    {
+      "id": "E-07",
+      "dimension": "E",
+      "difficulty": "medium",
+      "query": "Where did I grow up?",
+      "user_id": "u_e",
+      "passed": true,
+      "n_returned": 7,
+      "rank": 1,
+      "top1_score": 0.6276,
+      "ms": 76.67,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "Oregon"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:26:00.000000Z] user: I grew up in a small town in Oregon.",
+        "[2023-11-14T23:25:00.000000Z] user: My favorite color is teal.",
+        "[2023-11-14T23:21:00.000000Z] user: I love hiking on weekends.",
+        "[2023-11-14T23:20:00.000000Z] user: I am a vegetarian.",
+        "[2023-11-14T23:22:00.000000Z] user: I am allergic to peanuts.",
+        "[2023-11-14T23:23:00.000000Z] user: I don't like horror movies.",
+        "[2023-11-14T23:24:00.000000Z] user: I have been running every morning for five years."
+      ]
+    },
+    {
+      "id": "E-08",
+      "dimension": "E",
+      "difficulty": "boundary",
+      "query": "What are my dietary restrictions?",
+      "user_id": "u_e",
+      "passed": true,
+      "n_returned": 7,
+      "rank": 1,
+      "top1_score": 0.6179,
+      "ms": 75.31,
+      "checks": [
+        {
+          "type": "contains_all",
+          "values": [
+            "vegetarian",
+            "peanuts"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:20:00.000000Z] user: I am a vegetarian.",
+        "[2023-11-14T23:22:00.000000Z] user: I am allergic to peanuts.",
+        "[2023-11-14T23:25:00.000000Z] user: My favorite color is teal.",
+        "[2023-11-14T23:21:00.000000Z] user: I love hiking on weekends.",
+        "[2023-11-14T23:23:00.000000Z] user: I don't like horror movies.",
+        "[2023-11-14T23:26:00.000000Z] user: I grew up in a small town in Oregon.",
+        "[2023-11-14T23:24:00.000000Z] user: I have been running every morning for five years."
+      ]
+    },
+    {
+      "id": "G-01",
+      "dimension": "G",
+      "difficulty": "simple",
+      "query": "What should I do before deploying?",
+      "user_id": "u_g",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 1,
+      "top1_score": 0.7243,
+      "ms": 78.0,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "back up"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:36:40.000000Z] user: Always back up the database before deploying.",
+        "[2023-11-14T23:40:40.000000Z] user: If the build fails, I have to check the CI logs first.",
+        "[2023-11-14T23:38:40.000000Z] user: I must review all pull requests before merging.",
+        "[2023-11-14T23:37:40.000000Z] user: Never push directly to the main branch.",
+        "[2023-11-14T23:41:40.000000Z] user: Don't forget to update the changelog for each release.",
+        "[2023-11-14T23:39:40.000000Z] user: Make sure to log out of shared devices after use."
+      ]
+    },
+    {
+      "id": "G-02",
+      "dimension": "G",
+      "difficulty": "simple",
+      "query": "Can I push to the main branch?",
+      "user_id": "u_g",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 1,
+      "top1_score": 0.7591,
+      "ms": 81.19,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "main branch"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:37:40.000000Z] user: Never push directly to the main branch.",
+        "[2023-11-14T23:38:40.000000Z] user: I must review all pull requests before merging.",
+        "[2023-11-14T23:36:40.000000Z] user: Always back up the database before deploying.",
+        "[2023-11-14T23:40:40.000000Z] user: If the build fails, I have to check the CI logs first.",
+        "[2023-11-14T23:39:40.000000Z] user: Make sure to log out of shared devices after use.",
+        "[2023-11-14T23:41:40.000000Z] user: Don't forget to update the changelog for each release."
+      ]
+    },
+    {
+      "id": "G-03",
+      "dimension": "G",
+      "difficulty": "medium",
+      "query": "What must I do before merging code?",
+      "user_id": "u_g",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 1,
+      "top1_score": 0.7311,
+      "ms": 81.27,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "review"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:38:40.000000Z] user: I must review all pull requests before merging.",
+        "[2023-11-14T23:36:40.000000Z] user: Always back up the database before deploying.",
+        "[2023-11-14T23:40:40.000000Z] user: If the build fails, I have to check the CI logs first.",
+        "[2023-11-14T23:37:40.000000Z] user: Never push directly to the main branch.",
+        "[2023-11-14T23:41:40.000000Z] user: Don't forget to update the changelog for each release.",
+        "[2023-11-14T23:39:40.000000Z] user: Make sure to log out of shared devices after use."
+      ]
+    },
+    {
+      "id": "G-04",
+      "dimension": "G",
+      "difficulty": "medium",
+      "query": "What should I remember about shared devices?",
+      "user_id": "u_g",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 1,
+      "top1_score": 0.6856,
+      "ms": 78.39,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "log out"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:39:40.000000Z] user: Make sure to log out of shared devices after use.",
+        "[2023-11-14T23:36:40.000000Z] user: Always back up the database before deploying.",
+        "[2023-11-14T23:40:40.000000Z] user: If the build fails, I have to check the CI logs first.",
+        "[2023-11-14T23:38:40.000000Z] user: I must review all pull requests before merging.",
+        "[2023-11-14T23:37:40.000000Z] user: Never push directly to the main branch.",
+        "[2023-11-14T23:41:40.000000Z] user: Don't forget to update the changelog for each release."
+      ]
+    },
+    {
+      "id": "G-05",
+      "dimension": "G",
+      "difficulty": "medium",
+      "query": "What should I check if the build fails?",
+      "user_id": "u_g",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 1,
+      "top1_score": 0.7774,
+      "ms": 81.52,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "CI logs"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:40:40.000000Z] user: If the build fails, I have to check the CI logs first.",
+        "[2023-11-14T23:36:40.000000Z] user: Always back up the database before deploying.",
+        "[2023-11-14T23:38:40.000000Z] user: I must review all pull requests before merging.",
+        "[2023-11-14T23:37:40.000000Z] user: Never push directly to the main branch.",
+        "[2023-11-14T23:41:40.000000Z] user: Don't forget to update the changelog for each release.",
+        "[2023-11-14T23:39:40.000000Z] user: Make sure to log out of shared devices after use."
+      ]
+    },
+    {
+      "id": "G-06",
+      "dimension": "G",
+      "difficulty": "medium",
+      "query": "What do I need to update for each release?",
+      "user_id": "u_g",
+      "passed": true,
+      "n_returned": 6,
+      "rank": 1,
+      "top1_score": 0.699,
+      "ms": 79.92,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "changelog"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:41:40.000000Z] user: Don't forget to update the changelog for each release.",
+        "[2023-11-14T23:36:40.000000Z] user: Always back up the database before deploying.",
+        "[2023-11-14T23:38:40.000000Z] user: I must review all pull requests before merging.",
+        "[2023-11-14T23:40:40.000000Z] user: If the build fails, I have to check the CI logs first.",
+        "[2023-11-14T23:37:40.000000Z] user: Never push directly to the main branch.",
+        "[2023-11-14T23:39:40.000000Z] user: Make sure to log out of shared devices after use."
+      ]
+    },
+    {
+      "id": "H-01",
+      "dimension": "H",
+      "difficulty": "simple",
+      "query": "What is the capital city of quantum mechanics?",
+      "user_id": "u_h",
+      "passed": true,
+      "n_returned": 0,
+      "rank": null,
+      "top1_score": null,
+      "ms": 83.21,
+      "checks": [
+        {
+          "type": "empty",
+          "values": [],
+          "passed": true
+        }
+      ],
+      "returned": []
+    },
+    {
+      "id": "H-02",
+      "dimension": "H",
+      "difficulty": "simple",
+      "query": "What is my blood type?",
+      "user_id": "u_h",
+      "passed": true,
+      "n_returned": 0,
+      "rank": null,
+      "top1_score": null,
+      "ms": 33.45,
+      "checks": [
+        {
+          "type": "empty",
+          "values": [],
+          "passed": true
+        }
+      ],
+      "returned": []
+    },
+    {
+      "id": "H-03",
+      "dimension": "H",
+      "difficulty": "medium",
+      "query": "Where do I live?",
+      "user_id": "u_h",
+      "passed": true,
+      "n_returned": 1,
+      "rank": 1,
+      "top1_score": 0.7388,
+      "ms": 78.87,
+      "checks": [
+        {
+          "type": "contains",
+          "values": [
+            "New York"
+          ],
+          "passed": true
+        },
+        {
+          "type": "not_contains",
+          "values": [
+            "Paris"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": [
+        "[2023-11-14T23:53:20.000000Z] user: I live in New York.\n[2023-11-14T23:54:20.000000Z] user: I enjoy playing chess on rainy days."
+      ]
+    },
+    {
+      "id": "H-04",
+      "dimension": "H",
+      "difficulty": "medium",
+      "query": "What is my credit card number?",
+      "user_id": "u_h",
+      "passed": true,
+      "n_returned": 0,
+      "rank": null,
+      "top1_score": null,
+      "ms": 75.63,
+      "checks": [
+        {
+          "type": "not_contains",
+          "values": [
+            "4111"
+          ],
+          "passed": true
+        }
+      ],
+      "returned": []
+    },
+    {
+      "id": "H-05",
+      "dimension": "H",
+      "difficulty": "boundary",
+      "query": "Who won the 1998 FIFA World Cup final?",
+      "user_id": "u_h",
+      "passed": true,
+      "n_returned": 0,
+      "rank": null,
+      "top1_score": null,
+      "ms": 79.64,
+      "checks": [
+        {
+          "type": "empty",
+          "values": [],
+          "passed": true
+        }
+      ],
+      "returned": []
+    }
+  ]
+}

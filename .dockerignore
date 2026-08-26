@@ -1,0 +1,33 @@
+# Keep the build context lean; only app/ + requirements.txt are needed.
+.git/
+.gitignore
+.claude/
+.venv/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+archive/
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.env
+.env.*
+
+# Model weights / secrets must never enter the image.
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.ckpt
+
+# Non-runtime files.
+*.md
+docs/
+tests/
+scripts/
+requirements-dev.txt

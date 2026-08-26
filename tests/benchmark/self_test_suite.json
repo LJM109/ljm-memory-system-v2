@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "name": "AML 7-dimension local self-test suite",
+    "version": "1.0",
+    "disclaimer": "内部自测集，非官方基准数据集，结果仅作内部优化参考",
+    "note": "所有用例为人工设计的确定性合成样本，与 AML 官方评测数据无关。评分基于 Search 返回的原始记忆证据做透明命中判定。",
+    "top_k": 100,
+    "dimensions": {
+      "A": "显式事实召回",
+      "B": "关系与多跳组合推理",
+      "C": "时序与事件序列推理",
+      "D": "记忆治理",
+      "E": "个性化与关怀",
+      "G": "上下文学习与规则执行",
+      "H": "认识论安全与隐私"
+    },
+    "judge_types": {
+      "contains": "任一 value 子串（忽略大小写）出现在返回记忆 content 中即命中",
+      "contains_all": "所有 value 子串均在返回记忆中命中（可跨多条记忆）",
+      "not_contains": "所有 value 子串均不得出现在返回记忆中",
+      "empty": "返回 data 必须为空数组",
+      "count_eq": "包含指定 value 的记忆条数必须等于 n"
+    }
+  },
+  "users": [
+    {
+      "user_id": "u_a",
+      "dimension": "A",
+      "sessions": [
+        {
+          "session_id": "s_a1",
+          "messages": [
+            {"role": "user", "content": "I am a software engineer.", "timestamp": 1700000000000},
+            {"role": "user", "content": "I live in Boston, Massachusetts.", "timestamp": 1700000060000},
+            {"role": "user", "content": "My wedding anniversary is on March 15th.", "timestamp": 1700000120000},
+            {"role": "user", "content": "I drive a blue Toyota Corolla.", "timestamp": 1700000180000},
+            {"role": "user", "content": "My employee ID number is 4821.", "timestamp": 1700000240000},
+            {"role": "user", "content": "I have a cat named Luna.", "timestamp": 1700000300000},
+            {"role": "user", "content": "I have a dog named Max.", "timestamp": 1700000360000},
+            {"role": "user", "content": "I have been meaning to reorganize the garage and fix the garden shed this weekend, paint the fence a new color, call the plumber about the dripping faucet, and plan a short trip to visit my cousins next month. By the way, my grandmother's maiden name was Kowalczyk, a Polish surname from my family's side.", "timestamp": 1700000420000}
+          ]
+        }
+      ]
+    },
+    {
+      "user_id": "u_b",
+      "dimension": "B",
+      "sessions": [
+        {"session_id": "s_b1", "messages": [{"role": "user", "content": "My teammate at work is David.", "timestamp": 1700001000000}]},
+        {"session_id": "s_b2", "messages": [{"role": "user", "content": "David's wife is named Sarah.", "timestamp": 1700001060000}]},
+        {"session_id": "s_b3", "messages": [{"role": "user", "content": "Sarah works as a pediatrician at City Hospital.", "timestamp": 1700001120000}]},
+        {"session_id": "s_b4", "messages": [{"role": "user", "content": "David is my best friend.", "timestamp": 1700001180000}]},
+        {"session_id": "s_b5", "messages": [{"role": "user", "content": "David has a daughter named Emma.", "timestamp": 1700001240000}]}
+      ]
+    },
+    {
+      "user_id": "u_c",
+      "dimension": "C",
+      "sessions": [
+        {
+          "session_id": "s_c1",
+          "messages": [
+            {"role": "user", "content": "On Monday I worked on the Alpha project.", "timestamp": 1700002000000},
+            {"role": "user", "content": "On Tuesday I worked on the Beta project.", "timestamp": 1700002060000},
+            {"role": "user", "content": "On Wednesday I started the Gamma project.", "timestamp": 1700002120000}
+          ]
+        }
+      ]
+    },
+    {
+      "user_id": "u_d",
+      "dimension": "D",
+      "sessions": [
+        {"session_id": "s_d1", "messages": [{"role": "user", "content": "I live in Boston.", "timestamp": 1700003000000}]},
+        {"session_id": "s_d2", "messages": [{"role": "user", "content": "I work at Acme Corp.", "timestamp": 1700003060000}]},
+        {"session_id": "s_d3", "messages": [{"role": "user", "content": "I like coffee.", "timestamp": 1700003120000}]},
+        {"session_id": "s_d4", "messages": [{"role": "user", "content": "I like tea.", "timestamp": 1700003180000}]},
+        {"session_id": "s_d5", "messages": [{"role": "user", "content": "I'm called Alice.", "timestamp": 1700003240000}]},
+        {"session_id": "s_d6", "messages": [{"role": "user", "content": "I have a cat named Luna.", "timestamp": 1700003300000}]},
+        {"session_id": "s_d7", "messages": [{"role": "user", "content": "I live in Seattle.", "timestamp": 1700003360000}]},
+        {"session_id": "s_d8", "messages": [{"role": "user", "content": "I work at Globex.", "timestamp": 1700003420000}]},
+        {"session_id": "s_d9", "messages": [{"role": "user", "content": "I'm called Carol.", "timestamp": 1700003480000}]},
+        {"session_id": "s_d10", "messages": [{"role": "user", "content": "I have a cat named Luna.", "timestamp": 1700003540000}]}
+      ]
+    },
+    {
+      "user_id": "u_e",
+      "dimension": "E",
+      "sessions": [
+        {"session_id": "s_e1", "messages": [{"role": "user", "content": "I am a vegetarian.", "timestamp": 1700004000000}]},
+        {"session_id": "s_e2", "messages": [{"role": "user", "content": "I love hiking on weekends.", "timestamp": 1700004060000}]},
+        {"session_id": "s_e3", "messages": [{"role": "user", "content": "I am allergic to peanuts.", "timestamp": 1700004120000}]},
+        {"session_id": "s_e4", "messages": [{"role": "user", "content": "I don't like horror movies.", "timestamp": 1700004180000}]},
+        {"session_id": "s_e5", "messages": [{"role": "user", "content": "I have been running every morning for five years.", "timestamp": 1700004240000}]},
+        {"session_id": "s_e6", "messages": [{"role": "user", "content": "My favorite color is teal.", "timestamp": 1700004300000}]},
+        {"session_id": "s_e7", "messages": [{"role": "user", "content": "I grew up in a small town in Oregon.", "timestamp": 1700004360000}]}
+      ]
+    },
+    {
+      "user_id": "u_g",
+      "dimension": "G",
+      "sessions": [
+        {"session_id": "s_g1", "messages": [{"role": "user", "content": "Always back up the database before deploying.", "timestamp": 1700005000000}]},
+        {"session_id": "s_g2", "messages": [{"role": "user", "content": "Never push directly to the main branch.", "timestamp": 1700005060000}]},
+        {"session_id": "s_g3", "messages": [{"role": "user", "content": "I must review all pull requests before merging.", "timestamp": 1700005120000}]},
+        {"session_id": "s_g4", "messages": [{"role": "user", "content": "Make sure to log out of shared devices after use.", "timestamp": 1700005180000}]},
+        {"session_id": "s_g5", "messages": [{"role": "user", "content": "If the build fails, I have to check the CI logs first.", "timestamp": 1700005240000}]},
+        {"session_id": "s_g6", "messages": [{"role": "user", "content": "Don't forget to update the changelog for each release.", "timestamp": 1700005300000}]}
+      ]
+    },
+    {
+      "user_id": "u_h",
+      "dimension": "H",
+      "sessions": [
+        {
+          "session_id": "s_h1",
+          "messages": [
+            {"role": "user", "content": "I live in New York.", "timestamp": 1700006000000},
+            {"role": "user", "content": "I enjoy playing chess on rainy days.", "timestamp": 1700006060000}
+          ]
+        }
+      ]
+    },
+    {
+      "user_id": "u_h2",
+      "dimension": "H",
+      "sessions": [
+        {
+          "session_id": "s_h2_1",
+          "messages": [
+            {"role": "user", "content": "I live in Paris.", "timestamp": 1700007000000},
+            {"role": "user", "content": "My credit card number is 4111-1111-1111-1111.", "timestamp": 1700007060000}
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {"id": "A-01", "dimension": "A", "difficulty": "simple", "user_id": "u_a", "query": "What is my profession?",
+     "judge": {"checks": [{"type": "contains", "values": ["software engineer"]}]},
+     "expected": "命中包含 'software engineer' 的记忆"},
+    {"id": "A-02", "dimension": "A", "difficulty": "simple", "user_id": "u_a", "query": "Where do I live?",
+     "judge": {"checks": [{"type": "contains", "values": ["Boston"]}]},
+     "expected": "命中包含 'Boston' 的记忆"},
+    {"id": "A-03", "dimension": "A", "difficulty": "medium", "user_id": "u_a", "query": "When is my wedding anniversary?",
+     "judge": {"checks": [{"type": "contains", "values": ["March 15"]}]},
+     "expected": "命中 'March 15th' 记忆"},
+    {"id": "A-04", "dimension": "A", "difficulty": "medium", "user_id": "u_a", "query": "What car do I drive?",
+     "judge": {"checks": [{"type": "contains", "values": ["Corolla"]}]},
+     "expected": "命中 'Toyota Corolla' 记忆"},
+    {"id": "A-05", "dimension": "A", "difficulty": "boundary", "user_id": "u_a", "query": "What is my employee ID number?",
+     "judge": {"checks": [{"type": "contains", "values": ["4821"]}]},
+     "expected": "命中数字类事实 '4821'"},
+    {"id": "A-06", "dimension": "A", "difficulty": "boundary", "user_id": "u_a", "query": "What is my cat's name?",
+     "judge": {"checks": [{"type": "contains", "values": ["Luna"]}]},
+     "expected": "命中 'cat named Luna'，与 'dog named Max' 区分"},
+    {"id": "A-07", "dimension": "A", "difficulty": "boundary", "user_id": "u_a", "query": "What was my grandmother's maiden name?",
+     "judge": {"checks": [{"type": "contains", "values": ["Kowalczyk"]}]},
+     "expected": "命中长文本中低频事实 'Kowalczyk'"},
+
+    {"id": "B-01", "dimension": "B", "difficulty": "simple", "user_id": "u_b", "query": "Who is my teammate at work?",
+     "judge": {"checks": [{"type": "contains", "values": ["teammate"]}]},
+     "expected": "一跳：命中 'My teammate at work is David'"},
+    {"id": "B-02", "dimension": "B", "difficulty": "medium", "user_id": "u_b", "query": "What does David's wife do for a living?",
+     "judge": {"checks": [{"type": "contains_all", "values": ["wife", "pediatrician"]}]},
+     "expected": "二跳：需同时命中 'David's wife is Sarah' 与 'pediatrician' 两条记忆"},
+    {"id": "B-03", "dimension": "B", "difficulty": "hard", "user_id": "u_b", "query": "Where does my best friend's wife work?",
+     "judge": {"checks": [{"type": "contains_all", "values": ["best friend", "wife", "City Hospital"]}]},
+     "expected": "三跳：需命中 'best friend is David' + 'wife is Sarah' + 'City Hospital' 三条记忆"},
+    {"id": "B-04", "dimension": "B", "difficulty": "medium", "user_id": "u_b", "query": "Does my teammate have any children?",
+     "judge": {"checks": [{"type": "contains_all", "values": ["teammate", "Emma"]}]},
+     "expected": "二跳：命中 'teammate is David' + 'daughter Emma'"},
+    {"id": "B-05", "dimension": "B", "difficulty": "hard", "user_id": "u_b", "query": "What is the profession of my best friend's wife?",
+     "judge": {"checks": [{"type": "contains_all", "values": ["best friend", "wife", "pediatrician"]}]},
+     "expected": "三跳：'best friend' + 'wife' + 'pediatrician' 三条记忆同时命中"},
+
+    {"id": "C-01", "dimension": "C", "difficulty": "simple", "user_id": "u_c", "query": "What project did I work on Monday?",
+     "judge": {"checks": [{"type": "contains", "values": ["Alpha"]}]},
+     "expected": "命中 'Monday ... Alpha project'"},
+    {"id": "C-02", "dimension": "C", "difficulty": "simple", "user_id": "u_c", "query": "What project did I work on Tuesday?",
+     "judge": {"checks": [{"type": "contains", "values": ["Beta"]}]},
+     "expected": "命中 'Tuesday ... Beta project'"},
+    {"id": "C-03", "dimension": "C", "difficulty": "medium", "user_id": "u_c", "query": "Which project am I working on now?",
+     "judge": {"checks": [{"type": "contains", "values": ["Gamma"]}]},
+     "expected": "命中最新状态 'Wednesday ... Gamma project'"},
+    {"id": "C-04", "dimension": "C", "difficulty": "medium", "user_id": "u_c", "query": "What did I work on after the Alpha project?",
+     "judge": {"checks": [{"type": "contains", "values": ["Beta"]}]},
+     "expected": "时序：Alpha 之后是 Beta"},
+    {"id": "C-05", "dimension": "C", "difficulty": "medium", "user_id": "u_c", "query": "What projects did I work on this week?",
+     "judge": {"checks": [{"type": "contains_all", "values": ["Alpha", "Beta", "Gamma"]}]},
+     "expected": "时间范围：三条项目记忆均命中"},
+    {"id": "C-06", "dimension": "C", "difficulty": "boundary", "user_id": "u_c", "query": "What did I work on during the first two days of the week?",
+     "judge": {"checks": [{"type": "contains_all", "values": ["Alpha", "Beta"]}]},
+     "expected": "模糊时间范围：命中 Alpha 与 Beta"},
+
+    {"id": "D-01", "dimension": "D", "difficulty": "medium", "user_id": "u_d", "query": "Where do I live?",
+     "judge": {"checks": [{"type": "contains", "values": ["Seattle"]}, {"type": "not_contains", "values": ["Boston"]}]},
+     "expected": "地点单值覆盖：返回 Seattle，旧值 Boston 被取代"},
+    {"id": "D-02", "dimension": "D", "difficulty": "medium", "user_id": "u_d", "query": "Where do I work?",
+     "judge": {"checks": [{"type": "contains", "values": ["Globex"]}, {"type": "not_contains", "values": ["Acme"]}]},
+     "expected": "职业单值覆盖：返回 Globex，旧值 Acme 被取代"},
+    {"id": "D-03", "dimension": "D", "difficulty": "medium", "user_id": "u_d", "query": "What is my name?",
+     "judge": {"checks": [{"type": "contains", "values": ["Carol"]}, {"type": "not_contains", "values": ["Alice"]}]},
+     "expected": "姓名单值覆盖：返回 Carol，旧值 Alice 被取代"},
+    {"id": "D-04", "dimension": "D", "difficulty": "medium", "user_id": "u_d", "query": "What do I like?",
+     "judge": {"checks": [{"type": "contains_all", "values": ["coffee", "tea"]}]},
+     "expected": "多值偏好累加：coffee 与 tea 均保留，互不取代"},
+    {"id": "D-05", "dimension": "D", "difficulty": "boundary", "user_id": "u_d", "query": "Do I have a cat?",
+     "judge": {"checks": [{"type": "count_eq", "value": "Luna", "n": 1}]},
+     "expected": "去重：重复写入 'I have a cat named Luna' 仅保留 1 条"},
+
+    {"id": "E-01", "dimension": "E", "difficulty": "simple", "user_id": "u_e", "query": "Are there any foods I avoid?",
+     "judge": {"checks": [{"type": "contains", "values": ["vegetarian"]}]},
+     "expected": "命中 'I am a vegetarian'"},
+    {"id": "E-02", "dimension": "E", "difficulty": "simple", "user_id": "u_e", "query": "What do I enjoy doing on weekends?",
+     "judge": {"checks": [{"type": "contains", "values": ["hiking"]}]},
+     "expected": "命中偏好 'hiking on weekends'"},
+    {"id": "E-03", "dimension": "E", "difficulty": "simple", "user_id": "u_e", "query": "Do I have any allergies?",
+     "judge": {"checks": [{"type": "contains", "values": ["peanuts"]}]},
+     "expected": "命中 'allergic to peanuts'"},
+    {"id": "E-04", "dimension": "E", "difficulty": "medium", "user_id": "u_e", "query": "What kind of movies do I dislike?",
+     "judge": {"checks": [{"type": "contains", "values": ["horror"]}]},
+     "expected": "命中负面偏好 'don't like horror movies'"},
+    {"id": "E-05", "dimension": "E", "difficulty": "medium", "user_id": "u_e", "query": "What is my daily exercise habit?",
+     "judge": {"checks": [{"type": "contains", "values": ["running"]}]},
+     "expected": "命中长期习惯 'running every morning'"},
+    {"id": "E-06", "dimension": "E", "difficulty": "medium", "user_id": "u_e", "query": "What is my favorite color?",
+     "judge": {"checks": [{"type": "contains", "values": ["teal"]}]},
+     "expected": "命中偏好 'favorite color is teal'"},
+    {"id": "E-07", "dimension": "E", "difficulty": "medium", "user_id": "u_e", "query": "Where did I grow up?",
+     "judge": {"checks": [{"type": "contains", "values": ["Oregon"]}]},
+     "expected": "命中身份背景 'grew up in Oregon'"},
+    {"id": "E-08", "dimension": "E", "difficulty": "boundary", "user_id": "u_e", "query": "What are my dietary restrictions?",
+     "judge": {"checks": [{"type": "contains_all", "values": ["vegetarian", "peanuts"]}]},
+     "expected": "多偏好组合：同时命中 vegetarian 与 peanuts"},
+
+    {"id": "G-01", "dimension": "G", "difficulty": "simple", "user_id": "u_g", "query": "What should I do before deploying?",
+     "judge": {"checks": [{"type": "contains", "values": ["back up"]}]},
+     "expected": "命中规则 'Always back up the database before deploying'"},
+    {"id": "G-02", "dimension": "G", "difficulty": "simple", "user_id": "u_g", "query": "Can I push to the main branch?",
+     "judge": {"checks": [{"type": "contains", "values": ["main branch"]}]},
+     "expected": "命中规则 'Never push directly to the main branch'"},
+    {"id": "G-03", "dimension": "G", "difficulty": "medium", "user_id": "u_g", "query": "What must I do before merging code?",
+     "judge": {"checks": [{"type": "contains", "values": ["review"]}]},
+     "expected": "命中规则 'must review all pull requests before merging'"},
+    {"id": "G-04", "dimension": "G", "difficulty": "medium", "user_id": "u_g", "query": "What should I remember about shared devices?",
+     "judge": {"checks": [{"type": "contains", "values": ["log out"]}]},
+     "expected": "命中规则 'log out of shared devices after use'"},
+    {"id": "G-05", "dimension": "G", "difficulty": "medium", "user_id": "u_g", "query": "What should I check if the build fails?",
+     "judge": {"checks": [{"type": "contains", "values": ["CI logs"]}]},
+     "expected": "命中条件规则 'check the CI logs first'"},
+    {"id": "G-06", "dimension": "G", "difficulty": "medium", "user_id": "u_g", "query": "What do I need to update for each release?",
+     "judge": {"checks": [{"type": "contains", "values": ["changelog"]}]},
+     "expected": "命中规则 'update the changelog for each release'"},
+
+    {"id": "H-01", "dimension": "H", "difficulty": "simple", "user_id": "u_h", "query": "What is the capital city of quantum mechanics?",
+     "judge": {"checks": [{"type": "empty"}]},
+     "expected": "完全无关查询 → 返回空数组"},
+    {"id": "H-02", "dimension": "H", "difficulty": "simple", "user_id": "u_h", "query": "What is my blood type?",
+     "judge": {"checks": [{"type": "empty"}]},
+     "expected": "不存在的事实 → 返回空数组，不编造"},
+    {"id": "H-03", "dimension": "H", "difficulty": "medium", "user_id": "u_h", "query": "Where do I live?",
+     "judge": {"checks": [{"type": "contains", "values": ["New York"]}, {"type": "not_contains", "values": ["Paris"]}]},
+     "expected": "用户隔离：u_h 仅得 New York，不泄露 u_h2 的 Paris"},
+    {"id": "H-04", "dimension": "H", "difficulty": "medium", "user_id": "u_h", "query": "What is my credit card number?",
+     "judge": {"checks": [{"type": "not_contains", "values": ["4111"]}]},
+     "expected": "隐私隔离：u_h 查询不泄露 u_h2 的信用卡号"},
+    {"id": "H-05", "dimension": "H", "difficulty": "boundary", "user_id": "u_h", "query": "Who won the 1998 FIFA World Cup final?",
+     "judge": {"checks": [{"type": "empty"}]},
+     "expected": "领域外无关查询 → 返回空数组"}
+  ]
+}
